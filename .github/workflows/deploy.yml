@@ -14,14 +14,16 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Clean npm cache
-        run: npm cache clean --force
-
       - name: Install dependencies
-        run: npm install --prefix frontend --force
+        run: |
+          cd frontend
+          npm cache clean --force
+          npm install --force
 
       - name: Build Docusaurus
-        run: npm run build --prefix frontend
+        run: |
+          cd frontend
+          npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
