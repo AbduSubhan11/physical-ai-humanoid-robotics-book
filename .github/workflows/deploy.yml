@@ -18,7 +18,7 @@ jobs:
         run: |
           cd frontend
           npm cache clean --force
-          npm install --prefix frontend --force
+          npm install --force
 
       - name: Debug prism-react-renderer installation
         run: ls -R frontend/node_modules/prism-react-renderer || true
