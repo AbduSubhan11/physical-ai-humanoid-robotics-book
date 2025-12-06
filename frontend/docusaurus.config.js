@@ -6,6 +6,7 @@ const config = {
   title: 'Physical AI & Humanoid Robotics',
   tagline: 'An AI-Native Textbook',
   url: 'https://abdusubhan11.github.io',
+  
   baseUrl: '/physical-ai-humanoid-robotics-book/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
