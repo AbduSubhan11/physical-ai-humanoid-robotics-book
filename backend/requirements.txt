@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pydantic
+python-dotenv
+asyncpg # for Neon Postgres
+sqlalchemy
+alembic # for database migrations
+bcrypt # for password hashing in auth
+qdrant-client
+openai
