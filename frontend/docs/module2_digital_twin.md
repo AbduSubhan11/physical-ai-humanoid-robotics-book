@@ -318,7 +318,7 @@ For robotics, the primary way to leverage Unity's capabilities is by integrating
 
         void Start()
         {
-            ros = ROSConnection.Get ";
+            ros = ROSConnection.Get;
             ros.RegisterPublisher<JointStateMsg>(topicName);
 
             jointStateMsg = new JointStateMsg
