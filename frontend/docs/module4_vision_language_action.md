@@ -123,7 +123,7 @@ Consider a simple robot with `move_to` and `pick` capabilities.\n
 \"User Request: Please pick up the green cube and bring it to the charging station.\n
 Available Actions:\n- move_to(target_x, target_y)\n- pick_object(object_name)\n- place_object(target_x, target_y)\n
 Output a JSON list of actions to achieve the goal.\n
-Example:\nUser: Go to the door.\nOutput: [{"action": "move_to", "params": {"target_x": 0.0, "target_y": 5.0}}]}\n
+Example:\nUser: Go to the door.\nOutput: [{"action": "move_to", "params": {"target_x": 0.0, "target_y": 5.0}}]\n
 Now, generate the plan for the user request:\n\"\n
 ```
 
