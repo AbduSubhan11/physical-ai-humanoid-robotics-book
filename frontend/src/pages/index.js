@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import styles from "./home.module.css";
+import styles from "./index.module.css";
 
 export default function Home() {
   const [scrollY, setScrollY] = useState(0);
