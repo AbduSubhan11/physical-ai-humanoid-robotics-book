@@ -94,7 +94,7 @@ export default function Home() {
 
           {/* CTA Buttons */}
           <div className={styles.actions}>
-            <a href="/docs/intro" className={styles.primaryBtn}>Start Learning</a>
+            <a href="docs/module1_ros2" className={styles.primaryBtn}>Start Learning</a>
             <a href="#features" className={styles.secondaryBtn}>Explore Features</a>
           </div>
 

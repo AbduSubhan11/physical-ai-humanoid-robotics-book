@@ -33,12 +33,12 @@ const config = {
   ],
 
   themeConfig: ({
-    image: 'img/docusaurus-social-card.jpg',
+    image: './img/logo.jpg',
     navbar: {
       title: 'Physical AI & Humanoid Robotics',
       logo: {
         alt: 'Physical AI & Humanoid Robotics Logo',
-        src: 'img/logo.jpg',
+        src: './img/logo.jpg',
       },
       items: [
         {

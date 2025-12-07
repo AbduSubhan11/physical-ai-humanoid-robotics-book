@@ -6,20 +6,7 @@
   overflow-x: hidden;
 }
 
-/* Background */
-.background {
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-}
 
-.mesh {
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle at 20% 50%, rgba(59,130,246,0.3) 0%, transparent 50%),
-              radial-gradient(circle at 80% 80%, rgba(168,85,247,0.3) 0%, transparent 50%),
-              radial-gradient(circle at 40% 20%, rgba(236,72,153,0.2) 0%, transparent 50%);
-}
 
 /* Hero */
 .hero {
@@ -108,6 +95,7 @@
 
 .primaryBtn:hover {
   transform: scale(1.05);
+  color: white;
   box-shadow: 0 10px 25px rgba(236,72,153,0.5);
 }
 
