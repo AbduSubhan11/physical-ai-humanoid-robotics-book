@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./index.module.css";
-import aboutStyles from "./about-section.module.css"; // <-- add this
+import aboutStyles from "./about.module.css"; // <-- add this
 
 
 export default function Home() {
