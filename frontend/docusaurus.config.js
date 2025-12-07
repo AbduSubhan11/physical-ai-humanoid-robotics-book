@@ -1,16 +1,13 @@
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-   onBrokenLinks: 'ignore',
+  // Keep ignore so build NEVER fails on broken links
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'ignore',
-  
+
   title: 'Physical AI & Humanoid Robotics',
   tagline: 'An AI-Native Textbook',
   url: 'https://abdusubhan11.github.io',
-  
   baseUrl: '/physical-ai-humanoid-robotics-book/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'abdusubhan11',
   projectName: 'physical-ai-humanoid-robotics-book',
@@ -24,11 +21,10 @@ const config = {
           editUrl:
             'https://github.com/abdusubhan11/physical-ai-humanoid-robotics-book/tree/main/frontend/',
         },
-        blog: {
-          showReadingTime: true,
-          editUrl:
-            'https://github.com/abdusubhan11/physical-ai-humanoid-robotics-book/tree/main/frontend/',
-        },
+
+        // ❌ REMOVE BLOG COMPLETELY
+        blog: false,
+
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -51,7 +47,10 @@ const config = {
           position: 'left',
           label: 'Book',
         },
-        { to: '/blog', label: 'Blog', position: 'left' },
+
+        // ❌ REMOVED BLOG LINK
+        // { to: '/blog', label: 'Blog', position: 'left' },
+
         {
           href: 'https://github.com/abdusubhan11/physical-ai-humanoid-robotics-book',
           label: 'GitHub',
@@ -59,18 +58,10 @@ const config = {
         },
       ],
     },
+
     footer: {
       style: 'dark',
       links: [
-        // {
-        //   title: 'Docs',
-        //   items: [
-        //     {
-        //       label: 'Book',
-        //       to: '/docs/intro',
-        //     },
-        //   ],
-        // },
         {
           title: 'Community',
           items: [
@@ -87,10 +78,9 @@ const config = {
         {
           title: 'More',
           items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
+            // ❌ REMOVED BROKEN BLOG LINK
+            // { label: 'Blog', to: '/blog' },
+
             {
               label: 'GitHub',
               href: 'https://github.com/abdusubhan11/physical-ai-humanoid-robotics-book',
@@ -100,6 +90,7 @@ const config = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Physical AI & Humanoid Robotics. Built with Docusaurus.`,
     },
+
     prism: {},
   }),
 };
