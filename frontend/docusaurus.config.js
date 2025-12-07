@@ -33,13 +33,13 @@ const config = {
   ],
 
   themeConfig: ({
-    image: './img/logo.jpg',
+    // image: './img/logo.jpg',
     navbar: {
       title: 'Physical AI & Humanoid Robotics',
-      logo: {
-        alt: 'Physical AI & Humanoid Robotics Logo',
-        src: './img/logo.jpg',
-      },
+      // logo: {
+      //   alt: 'Physical AI & Humanoid Robotics Logo',
+      //   src: './img/logo.jpg',
+      // },
       items: [
         {
           type: 'docSidebar',
