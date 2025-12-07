@@ -1,6 +1,9 @@
 name: Deploy Docusaurus to GitHub Pages
 
-on: [push]
+on:
+  push:
+    branches:
+      - main  # Or your default branch
 
 jobs:
   deploy:
@@ -17,11 +20,7 @@ jobs:
       - name: Install dependencies
         run: |
           cd frontend
-          npm cache clean --force
           npm install --force
-
-      - name: Debug prism-react-renderer installation
-        run: ls -R frontend/node_modules/prism-react-renderer || true
 
       - name: Build Docusaurus
         run: |
@@ -33,4 +32,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./frontend/build
-          cname: your-custom-domain.com # Optional: If you have a custom domain, replace with your domain. Otherwise, remove this line.
+          # repo: abdusubhan11/physical-ai-humanoid-robotics-book # Optional
+          # cname: remove this if not using a custom domain
