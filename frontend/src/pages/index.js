@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./index.module.css";
+import aboutStyles from "./about-section.module.css"; // <-- add this
+
 
 export default function Home() {
   const [scrollY, setScrollY] = useState(0);
@@ -31,6 +33,40 @@ export default function Home() {
     { icon: "📖", value: "12+", label: "Chapters", color: "cyan" },
     { icon: "👥", value: "1000+", label: "Students", color: "violet" },
     { icon: "🏆", value: "100%", label: "Free Access", color: "emerald" },
+  ];
+
+  const aboutFeatures = [
+    {
+      icon: (
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <circle cx="12" cy="12" r="10" />
+          <path d="M12 16v-4M12 8h.01" />
+        </svg>
+      ),
+      title: "Deep Understanding",
+      description: "Master the fundamental concepts of generative AI and how they apply to physical systems.",
+    },
+    {
+      icon: (
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <rect x="4" y="4" width="6" height="6" rx="1" />
+          <rect x="14" y="4" width="6" height="6" rx="1" />
+          <rect x="4" y="14" width="6" height="6" rx="1" />
+          <rect x="14" y="14" width="6" height="6" rx="1" />
+        </svg>
+      ),
+      title: "Hands-On Projects",
+      description: "Build and deploy real robotic applications using state-of-the-art AI techniques.",
+    },
+    {
+      icon: (
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+        </svg>
+      ),
+      title: "Industry Ready",
+      description: "Learn deployment strategies and scaling techniques for production systems.",
+    },
   ];
 
   return (
