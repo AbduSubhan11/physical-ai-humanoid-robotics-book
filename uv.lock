@@ -1,0 +1,35 @@
+version = 1
+revision = 2
+requires-python = ">=3.13"
+
+[[package]]
+name = "physical-ai-humanoid-robotics-book"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "specify" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "specify", specifier = ">=0.0.9" }]
+
+[[package]]
+name = "prophepy"
+version = "0.0.4"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/b1/f1/9e3a00ae4f13d6a8d4c1d3fb9c1cfb7d6ae813e71aea608136280d962018/prophepy-0.0.4.tar.gz", hash = "sha256:9009ba16d06cfd7c4048864013198866b809fe5d05f7d0fd25699dde90734ad3", size = 3597, upload-time = "2019-02-14T18:32:05.746Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/16/b2/7694e88ffac6ed0ee9c4cc363ab1481defd324cc2a91768cbc476315778c/prophepy-0.0.4-py3-none-any.whl", hash = "sha256:a4730f163ccccceb2aaaa908c70a0192dd2992bbad171bb6d74aec27bdf09c9c", size = 8137, upload-time = "2019-02-14T18:32:04.05Z" },
+]
+
+[[package]]
+name = "specify"
+version = "0.0.9"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "prophepy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/c9/25/4742c9e13c107050dac96ea0759278722064affa992ac7183f07d3338ef5/specify-0.0.9.tar.gz", hash = "sha256:57d7a7d452c1fdbf208f4bd37e55eddeab8fb139b46ba491ec2fad04a07285cd", size = 8729, upload-time = "2019-02-14T18:33:48.556Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/5c/9a/1a97d6c7ae6475a6873d5716bd4be65fe2b5ebb2ba68dacf1b6e0c144d17/specify-0.0.9-py3-none-any.whl", hash = "sha256:d25c0d689d86b141ed56fdb589a100340f976f42f382345a3c50c0cb1c7c371a", size = 17075, upload-time = "2019-02-14T18:33:47.029Z" },
+]

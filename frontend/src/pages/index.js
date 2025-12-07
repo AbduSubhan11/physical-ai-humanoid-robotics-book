@@ -140,7 +140,7 @@ export default function Home() {
         <div className={styles.ctaContainer}>
           <h2>Ready to Transform Your Learning?</h2>
           <p>Join thousands mastering Physical AI and Humanoid Robotics</p>
-          <a href="/docs/intro" className={styles.finalCTAButton}>
+          <a href="docs/module1_ros2" className={styles.finalCTAButton}>
             Begin Your Journey
           </a>
         </div>
