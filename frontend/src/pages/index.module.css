@@ -54,7 +54,14 @@
 .highlight {
   display: block;
   font-size: 3rem;
-  background: linear-gradient(120deg, #00f0ff, #0080ff, #ff3dff, #00ff9f);
+  background: linear-gradient(
+    90deg,
+    #B0B0B0 0%,
+    #A19D9D 20%,
+    #737373 53%,
+    #858585 90%,
+    #828282 100%
+  );
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
