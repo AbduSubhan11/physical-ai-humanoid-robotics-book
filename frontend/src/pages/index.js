@@ -109,6 +109,36 @@ export default function Home() {
           </a>
         </div>
       </section>
+
+       <section id="about" className={aboutStyles.about}>
+        <div className={aboutStyles.container}>
+          <div className={aboutStyles.content}>
+            <span className={aboutStyles.label}>About the Course</span>
+            <h2 className={aboutStyles.title}>Bridge the gap between AI theory and robotics practice</h2>
+            <p className={aboutStyles.description}>
+              The Physical AI Course is your comprehensive guide to mastering generative AI and humanoid robotics. Dive
+              deep into the foundations of physical AI, explore cutting-edge simulation techniques, and build real-world
+              robotic applications.
+            </p>
+            <p className={aboutStyles.subdesc}>
+              Designed for engineers, researchers, and enthusiasts who want to transform theoretical knowledge into
+              practical, deployable robotics solutions.
+            </p>
+          </div>
+
+          <div className={aboutStyles.features}>
+            {aboutFeatures.map((feature, index) => (
+              <div key={index} className={aboutStyles.featureCard}>
+                <div className={aboutStyles.featureIcon}>{feature.icon}</div>
+                <div className={aboutStyles.featureContent}>
+                  <h3 className={aboutStyles.featureTitle}>{feature.title}</h3>
+                  <p className={aboutStyles.featureDesc}>{feature.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
