@@ -38,7 +38,7 @@ const config = {
       title: 'Physical AI & Humanoid Robotics',
       logo: {
         alt: 'Physical AI & Humanoid Robotics Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo.jpg',
       },
       items: [
         {
@@ -51,11 +51,7 @@ const config = {
         // ❌ REMOVED BLOG LINK
         // { to: '/blog', label: 'Blog', position: 'left' },
 
-        {
-          href: 'https://github.com/abdusubhan11/physical-ai-humanoid-robotics-book',
-          label: 'GitHub',
-          position: 'right',
-        },
+       
       ],
     },
     
@@ -76,18 +72,7 @@ const config = {
             },
           ],
         },
-        {
-          title: 'More',
-          items: [
-            // ❌ REMOVED BROKEN BLOG LINK
-            // { label: 'Blog', to: '/blog' },
-
-            {
-              label: 'GitHub',
-              href: 'https://github.com/abdusubhan11/physical-ai-humanoid-robotics-book',
-            },
-          ],
-        },
+       
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Physical AI & Humanoid Robotics. Built with Docusaurus.`,
     },
