@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import './index.module.css'; // your CSS file
+import React, { useState, useEffect } from "react";
+import styles from "./index.module.css";
 
 export default function Home() {
   const [scrollY, setScrollY] = useState(0);
@@ -7,8 +7,8 @@ export default function Home() {
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
@@ -32,40 +32,37 @@ export default function Home() {
   ];
 
   return (
-    <div className="home-container">
-      {/* Background Elements */}
-      <div className="background-circle blue" style={{ transform: `translateY(${scrollY * 0.3}px)` }}></div>
-      <div className="background-circle purple" style={{ transform: `translateY(${-scrollY * 0.2}px)` }}></div>
+    <div className={styles.home}>
+      {/* Animated Background */}
+      <div className={styles.glowBlue} style={{ transform: `translateY(${scrollY * 0.3}px)` }}></div>
+      <div className={styles.glowPurple} style={{ transform: `translateY(${-scrollY * 0.2}px)` }}></div>
 
       {/* Hero Section */}
-      <header className="hero-section">
-        <div className="hero-content">
-          <div className="badge">⚡ AI-Native Textbook</div>
-
-          <h1 className="hero-title">
+      <header className={styles.hero}>
+        <div className={styles.heroContent}>
+          <div className={styles.badge}>⚡ AI-Native Textbook</div>
+          <h1 className={styles.title}>
             Physical AI & <br /> Humanoid Robotics
           </h1>
-
-          <p className="hero-subtitle">
+          <p className={styles.subtitle}>
             Master the future of robotics with interactive learning, AI-powered assistance, and comprehensive coverage of cutting-edge technologies
           </p>
 
-          <div className="hero-buttons">
-            <a href="/docs/intro" className="btn-primary">
+          <div className={styles.actions}>
+            <a href="/docs/intro" className={styles.primaryBtn}>
               Start Reading ➡️
             </a>
-            <a href="#features" className="btn-secondary">
+            <a href="#features" className={styles.secondaryBtn}>
               Explore Features
             </a>
           </div>
 
-          {/* Stats */}
-          <div className="stats-container">
-            {stats.map((stat, index) => (
-              <div key={index} className="stat">
-                <div className="stat-icon">{stat.icon}</div>
-                <div className="stat-value">{stat.value}</div>
-                <div className="stat-label">{stat.label}</div>
+          <div className={styles.stats}>
+            {stats.map((stat, i) => (
+              <div key={i} className={styles.stat}>
+                <div className={styles.statIcon}>{stat.icon}</div>
+                <div className={styles.statValue}>{stat.value}</div>
+                <div className={styles.statLabel}>{stat.label}</div>
               </div>
             ))}
           </div>
@@ -73,23 +70,23 @@ export default function Home() {
       </header>
 
       {/* Features Section */}
-      <section id="features" className="features-section">
-        <div className="features-container">
-          <div className="features-header">
+      <section id="features" className={styles.featuresSection}>
+        <div className={styles.featuresContainer}>
+          <div className={styles.featuresHeader}>
             <h2>Why This Textbook?</h2>
             <p>Experience the future of technical education</p>
           </div>
 
-          <div className="features-grid">
+          <div className={styles.featuresGrid}>
             {features.map((feature, index) => (
               <div
                 key={index}
-                className={`feature-card ${activeFeature === index ? 'active' : ''}`}
+                className={`${styles.featureCard} ${activeFeature === index ? styles.active : ""}`}
                 onMouseEnter={() => setActiveFeature(index)}
               >
-                <div className="feature-icon">{feature.icon}</div>
-                <h3 className="feature-title">{feature.title}</h3>
-                <p className="feature-desc">{feature.description}</p>
+                <div className={styles.featureIcon}>{feature.icon}</div>
+                <h3 className={styles.featureTitle}>{feature.title}</h3>
+                <p className={styles.featureDesc}>{feature.description}</p>
               </div>
             ))}
           </div>
