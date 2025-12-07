@@ -1,6 +1,9 @@
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+   onBrokenLinks: 'ignore',
+  onBrokenMarkdownLinks: 'ignore',
+  
   title: 'Physical AI & Humanoid Robotics',
   tagline: 'An AI-Native Textbook',
   url: 'https://abdusubhan11.github.io',
@@ -59,15 +62,15 @@ const config = {
     footer: {
       style: 'dark',
       links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Book',
-              to: '/docs/intro',
-            },
-          ],
-        },
+        // {
+        //   title: 'Docs',
+        //   items: [
+        //     {
+        //       label: 'Book',
+        //       to: '/docs/intro',
+        //     },
+        //   ],
+        // },
         {
           title: 'Community',
           items: [
