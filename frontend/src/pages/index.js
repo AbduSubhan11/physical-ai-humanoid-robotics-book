@@ -26,7 +26,7 @@ export default function Home() {
     { icon: "📚", title: "Comprehensive Coverage", description: "Complete Physical AI & Humanoid Robotics curriculum with in-depth chapters and real-world applications", color: "cyan" },
     { icon: "💬", title: "AI-Powered RAG Chatbot", description: "Interactive learning assistant that answers questions using the textbook's knowledge base", color: "violet" },
     { icon: "✨", title: "Personalized Learning", description: "Adaptive content and learning paths tailored to your progress and understanding", color: "pink" },
-    { icon: "🌐", title: "Urdu Translation", description: "Full bilingual support making advanced robotics education accessible to Urdu speakers", color: "emerald" },
+    { icon: "🌐", title: "Modern Content", description: "Up-to-date curriculum with the latest advancements in AI, robotics, and humanoid systems", color: "emerald" },
   ];
 
   const stats = [
