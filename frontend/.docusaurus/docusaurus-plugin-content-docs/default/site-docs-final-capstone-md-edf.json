@@ -1,0 +1,23 @@
+{
+  "id": "final-capstone",
+  "title": "Final Capstone Project - Integrating Physical AI & Humanoid Robotics",
+  "description": "Overview",
+  "source": "@site/docs/final_capstone.md",
+  "sourceDirName": ".",
+  "slug": "/final-capstone",
+  "permalink": "/physical-ai-humanoid-robotics-book/docs/final-capstone",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/abdusubhan11/physical-ai-humanoid-robotics-book/tree/main/frontend/docs/final_capstone.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "final-capstone",
+    "title": "Final Capstone Project - Integrating Physical AI & Humanoid Robotics"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "URDF for Humanoids",
+    "permalink": "/physical-ai-humanoid-robotics-book/docs/urdf-for-humanoids"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "hardware_requirements",
+  "title": "Hardware Requirements",
+  "description": "Essential hardware components for Physical AI & Humanoid Robotics projects.",
+  "source": "@site/docs/hardware_requirements.md",
+  "sourceDirName": ".",
+  "slug": "/hardware-requirements",
+  "permalink": "/physical-ai-humanoid-robotics-book/docs/hardware-requirements",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/abdusubhan11/physical-ai-humanoid-robotics-book/tree/main/frontend/docs/hardware_requirements.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Hardware Requirements",
+    "description": "Essential hardware components for Physical AI & Humanoid Robotics projects.",
+    "slug": "/hardware-requirements"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "urdf-for-humanoids",
+  "title": "URDF for Humanoids",
+  "description": "Defining robotic structures with URDF.",
+  "source": "@site/docs/urdf-for-humanoids.md",
+  "sourceDirName": ".",
+  "slug": "/urdf-for-humanoids",
+  "permalink": "/physical-ai-humanoid-robotics-book/docs/urdf-for-humanoids",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/abdusubhan11/physical-ai-humanoid-robotics-book/tree/main/frontend/docs/urdf-for-humanoids.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "URDF for Humanoids",
+    "description": "Defining robotic structures with URDF.",
+    "slug": "urdf-for-humanoids"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Topics & Services",
+    "permalink": "/physical-ai-humanoid-robotics-book/docs/topics-services"
+  },
+  "next": {
+    "title": "Final Capstone Project - Integrating Physical AI & Humanoid Robotics",
+    "permalink": "/physical-ai-humanoid-robotics-book/docs/final-capstone"
+  }
+}

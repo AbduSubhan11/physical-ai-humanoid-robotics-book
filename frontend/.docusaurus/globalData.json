@@ -1,0 +1,77 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/physical-ai-humanoid-robotics-book/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/physical-ai-humanoid-robotics-book/docs",
+          "mainDocId": "module1_ros2",
+          "docs": [
+            {
+              "id": "final-capstone",
+              "path": "/physical-ai-humanoid-robotics-book/docs/final-capstone",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "hardware_requirements",
+              "path": "/physical-ai-humanoid-robotics-book/docs/hardware-requirements"
+            },
+            {
+              "id": "module1_ros2",
+              "path": "/physical-ai-humanoid-robotics-book/docs/module1_ros2",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module2_digital_twin",
+              "path": "/physical-ai-humanoid-robotics-book/docs/module2_digital_twin",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module3_ai_robot_brain",
+              "path": "/physical-ai-humanoid-robotics-book/docs/module3_ai_robot_brain",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module4_vision_language_action",
+              "path": "/physical-ai-humanoid-robotics-book/docs/module4_vision_language_action",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "rclpy-example-controllers",
+              "path": "/physical-ai-humanoid-robotics-book/docs/rclpy-example-controllers",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ros2-nodes",
+              "path": "/physical-ai-humanoid-robotics-book/docs/ros2-nodes",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "topics-services",
+              "path": "/physical-ai-humanoid-robotics-book/docs/topics-services",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "urdf-for-humanoids",
+              "path": "/physical-ai-humanoid-robotics-book/docs/urdf-for-humanoids",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/physical-ai-humanoid-robotics-book/docs/module1_ros2",
+                "label": "module1_ros2"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

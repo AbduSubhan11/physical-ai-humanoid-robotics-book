@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import styles from "./index.module.css";
 import aboutStyles from "./about.module.css"; // <-- add this
-
+import '../css/custom.css';
+import ChatInterface from "../components/ChatInterface";
 
 export default function Home() {
   const [scrollY, setScrollY] = useState(0);
@@ -81,6 +82,8 @@ export default function Home() {
         />
       </div>
 
+      <ChatInterface/>
+
       {/* Hero Section */}
       <header className={styles.hero}>
         <div className={`${styles.heroContent} ${isVisible ? styles.visible : styles.hidden}`}>
@@ -96,6 +99,11 @@ export default function Home() {
           <div className={styles.actions}>
             <a href="docs/module1_ros2" className={styles.primaryBtn}>Start Learning</a>
             <a href="#features" className={styles.secondaryBtn}>Explore Features</a>
+            {/* Login/Signup Buttons */}
+            <div className={styles.authButtons}>
+              <a href="auth/login" className={styles.loginBtn}>Login</a>
+              <a href="auth/signup" className={styles.signupBtn}>Sign Up</a>
+            </div>
           </div>
 
           {/* Stats */}

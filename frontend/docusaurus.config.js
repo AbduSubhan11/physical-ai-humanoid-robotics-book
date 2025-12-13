@@ -32,6 +32,33 @@ const config = {
     ],
   ],
 
+
+  plugins: [
+    // Plugin to inject environment variables into the HTML
+    async function injectEnvPlugin(context, options) {
+      return {
+        name: 'inject-env-plugin',
+        injectHtmlTags() {
+          const REACT_APP_API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000/api/v1';
+          const REACT_APP_WS_URL = process.env.REACT_APP_WS_URL || 'ws://localhost:8000';
+
+          return {
+            headTags: [
+              {
+                tagName: 'script',
+                innerHTML: `
+                  window.REACT_APP_API_URL = "${REACT_APP_API_URL}";
+                  window.REACT_APP_WS_URL = "${REACT_APP_WS_URL}";
+                `,
+              },
+            ],
+          };
+        },
+      };
+    },
+  ],
+
+
   themeConfig: ({
     // image: './img/logo.jpg',
     navbar: {
@@ -50,8 +77,16 @@ const config = {
 
         // ❌ REMOVED BLOG LINK
         // { to: '/blog', label: 'Blog', position: 'left' },
-
-       
+        {
+          to: '/auth/login',
+          label: 'Login',
+          position: 'right',
+        },
+        {
+          to: '/auth/signup',
+          label: 'Sign Up',
+          position: 'right',
+        },
       ],
     },
     

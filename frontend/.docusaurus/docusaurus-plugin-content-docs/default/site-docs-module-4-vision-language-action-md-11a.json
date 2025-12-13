@@ -1,0 +1,28 @@
+{
+  "id": "module4_vision_language_action",
+  "title": "Module 4 — Vision-Language-Action",
+  "description": "This module explores the intersection of computer vision, natural language processing, and robotics. These domains converge to enable intuitive and capable robotic systems, allowing robots to understand human commands, interpret their environment, and execute complex actions.",
+  "source": "@site/docs/module4_vision_language_action.md",
+  "sourceDirName": ".",
+  "slug": "/module4_vision_language_action",
+  "permalink": "/physical-ai-humanoid-robotics-book/docs/module4_vision_language_action",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/abdusubhan11/physical-ai-humanoid-robotics-book/tree/main/frontend/docs/module4_vision_language_action.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4,
+    "title": "Module 4 — Vision-Language-Action"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "The AI-Robot Brain (NVIDIA Isaac)",
+    "permalink": "/physical-ai-humanoid-robotics-book/docs/module3_ai_robot_brain"
+  },
+  "next": {
+    "title": "rclpy Example Controllers",
+    "permalink": "/physical-ai-humanoid-robotics-book/docs/rclpy-example-controllers"
+  }
+}

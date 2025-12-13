@@ -1,0 +1,20 @@
+{
+  "id": "module1_ros2",
+  "title": "Module 1 — The Robotic Nervous System (ROS 2)",
+  "description": "The Robotic Operating System (ROS) is a flexible framework for writing robot software. It's a collection of tools, libraries, and conventions that aim to simplify the task of creating complex and robust robot behaviors across a wide variety of robotic platforms. ROS 2 is the latest iteration, designed with improved real-time capabilities, security, and multi-robot system support.",
+  "source": "@site/docs/module1_ros2.md",
+  "sourceDirName": ".",
+  "slug": "/module1_ros2",
+  "permalink": "/physical-ai-humanoid-robotics-book/docs/module1_ros2",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/abdusubhan11/physical-ai-humanoid-robotics-book/tree/main/frontend/docs/module1_ros2.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Module 2 — The Digital Twin (Gazebo & Unity)",
+    "permalink": "/physical-ai-humanoid-robotics-book/docs/module2_digital_twin"
+  }
+}

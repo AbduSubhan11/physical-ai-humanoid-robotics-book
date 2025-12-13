@@ -1,0 +1,300 @@
+openapi: 3.0.0
+info:
+  title: AI Book Chatbot API
+  version: 1.0.0
+  description: API for the AI-powered chatbot system that answers questions about robotics books
+
+paths:
+  /api/v1/content/upload:
+    post:
+      summary: Upload book content
+      description: Upload book chapters in various formats for processing
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              required:
+                - file
+              properties:
+                file:
+                  type: string
+                  format: binary
+                  description: Book content file (PDF, text, or Markdown)
+      responses:
+        '200':
+          description: Upload successful, returns processing job ID
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  job_id:
+                    type: string
+                    description: ID of the content processing job
+                  status:
+                    type: string
+                    description: Current status of the upload
+        '400':
+          description: Invalid file format or size
+        '401':
+          description: Unauthorized access
+
+  /api/v1/content/processing-status/{job_id}:
+    get:
+      summary: Check content processing status
+      description: Check the status of a content processing job
+      parameters:
+        - name: job_id
+          in: path
+          required: true
+          schema:
+            type: string
+          description: ID of the content processing job
+      responses:
+        '200':
+          description: Processing status information
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  job_id:
+                    type: string
+                  status:
+                    type: string
+                    enum: [pending, processing, completed, failed]
+                  progress:
+                    type: number
+                    format: float
+                    description: Progress percentage (0.0 to 1.0)
+                  message:
+                    type: string
+                    description: Additional status information
+        '404':
+          description: Job ID not found
+
+  /api/v1/chat/start:
+    post:
+      summary: Start a new conversation
+      description: Initialize a new chat conversation
+      responses:
+        '200':
+          description: Conversation started successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  conversation_id:
+                    type: string
+                    description: Unique ID for the conversation
+                  title:
+                    type: string
+                    description: Generated title for the conversation
+        '401':
+          description: Unauthorized access
+
+  /api/v1/chat/{conversation_id}/message:
+    post:
+      summary: Send a message in conversation
+      description: Send a user message and receive an AI response
+      parameters:
+        - name: conversation_id
+          in: path
+          required: true
+          schema:
+            type: string
+          description: ID of the conversation
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - message
+              properties:
+                message:
+                  type: string
+                  description: The user's message/question
+      responses:
+        '200':
+          description: AI response to the user's message
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  response:
+                    type: string
+                    description: The AI-generated response
+                  citations:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        section:
+                          type: string
+                          description: Book section referenced
+                        page:
+                          type: number
+                          description: Page number if applicable
+                        confidence:
+                          type: number
+                          format: float
+                          description: Confidence score for this citation
+                  conversation_id:
+                    type: string
+                    description: ID of the conversation
+        '400':
+          description: Invalid message format
+        '404':
+          description: Conversation not found
+
+  /api/v1/chat/{conversation_id}/history:
+    get:
+      summary: Get conversation history
+      description: Retrieve the history of messages in a conversation
+      parameters:
+        - name: conversation_id
+          in: path
+          required: true
+          schema:
+            type: string
+          description: ID of the conversation
+      responses:
+        '200':
+          description: Conversation history
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  conversation_id:
+                    type: string
+                  messages:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                        role:
+                          type: string
+                          enum: [user, assistant]
+                        content:
+                          type: string
+                        timestamp:
+                          type: string
+                          format: date-time
+        '404':
+          description: Conversation not found
+
+  /api/v1/search:
+    post:
+      summary: Perform semantic search
+      description: Search book content using semantic search
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - query
+              properties:
+                query:
+                  type: string
+                  description: Search query
+                top_k:
+                  type: number
+                  default: 5
+                  description: Number of results to return
+      responses:
+        '200':
+          description: Search results
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  results:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        content:
+                          type: string
+                          description: Relevant content chunk
+                        source:
+                          type: object
+                          properties:
+                            title:
+                              type: string
+                            section:
+                              type: string
+                            page:
+                              type: number
+                        score:
+                          type: number
+                          format: float
+                          description: Relevance score
+                  query:
+                    type: string
+                    description: Original query
+        '400':
+          description: Invalid query format
+
+  /api/v1/admin/content:
+    get:
+      summary: List all book content
+      description: Get a list of all book content in the system
+      responses:
+        '200':
+          description: List of book content
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  content_list:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                        title:
+                          type: string
+                        format:
+                          type: string
+                        created_at:
+                          type: string
+                          format: date-time
+        '401':
+          description: Unauthorized access
+        '403':
+          description: Forbidden access
+
+  /api/v1/admin/content/{content_id}:
+    delete:
+      summary: Remove book content
+      description: Remove specific book content from the system
+      parameters:
+        - name: content_id
+          in: path
+          required: true
+          schema:
+            type: string
+          description: ID of the content to remove
+      responses:
+        '200':
+          description: Content removed successfully
+        '401':
+          description: Unauthorized access
+        '403':
+          description: Forbidden access
+        '404':
+          description: Content not found

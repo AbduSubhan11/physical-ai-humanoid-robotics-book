@@ -1,0 +1,28 @@
+{
+  "id": "ros2-nodes",
+  "title": "ROS 2 Nodes",
+  "description": "Understanding the fundamental building blocks of ROS 2.",
+  "source": "@site/docs/ros2-nodes.md",
+  "sourceDirName": ".",
+  "slug": "/ros2-nodes",
+  "permalink": "/physical-ai-humanoid-robotics-book/docs/ros2-nodes",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/abdusubhan11/physical-ai-humanoid-robotics-book/tree/main/frontend/docs/ros2-nodes.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "ROS 2 Nodes",
+    "description": "Understanding the fundamental building blocks of ROS 2.",
+    "slug": "ros2-nodes"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "rclpy Example Controllers",
+    "permalink": "/physical-ai-humanoid-robotics-book/docs/rclpy-example-controllers"
+  },
+  "next": {
+    "title": "Topics & Services",
+    "permalink": "/physical-ai-humanoid-robotics-book/docs/topics-services"
+  }
+}

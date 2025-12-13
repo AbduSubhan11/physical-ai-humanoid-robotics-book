@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python run_backend.py)",
+      "Bash(npm run dev)",
+      "Bash(PORT=3001 npm run dev)",
+      "Bash(find frontend -name \"*.jsx\" -o -name \"*.js\" -o -name \"*.tsx\" -o -name \"*.ts\" -exec grep -l \"Chat\" {} ;)",
+      "Bash(find frontend/src -name \"*.jsx\" -o -name \"*.js\" -exec grep -l \"Chat\" {} ;)"
+    ]
+  }
+}

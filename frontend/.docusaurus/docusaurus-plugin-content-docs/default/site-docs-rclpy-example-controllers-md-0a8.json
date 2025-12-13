@@ -1,0 +1,28 @@
+{
+  "id": "rclpy-example-controllers",
+  "title": "rclpy Example Controllers",
+  "description": "Implementing robotic control using rclpy.",
+  "source": "@site/docs/rclpy-example-controllers.md",
+  "sourceDirName": ".",
+  "slug": "/rclpy-example-controllers",
+  "permalink": "/physical-ai-humanoid-robotics-book/docs/rclpy-example-controllers",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/abdusubhan11/physical-ai-humanoid-robotics-book/tree/main/frontend/docs/rclpy-example-controllers.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "rclpy Example Controllers",
+    "description": "Implementing robotic control using rclpy.",
+    "slug": "rclpy-example-controllers"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Module 4 — Vision-Language-Action",
+    "permalink": "/physical-ai-humanoid-robotics-book/docs/module4_vision_language_action"
+  },
+  "next": {
+    "title": "ROS 2 Nodes",
+    "permalink": "/physical-ai-humanoid-robotics-book/docs/ros2-nodes"
+  }
+}

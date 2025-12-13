@@ -1,0 +1,24 @@
+{
+  "id": "module2_digital_twin",
+  "title": "Module 2 — The Digital Twin (Gazebo & Unity)",
+  "description": "Digital twins are virtual models designed to accurately reflect a physical object. In robotics, a digital twin allows for the simulation and testing of robots and their environments in a virtual space before deployment in the real world. This module explores two prominent platforms for creating digital twins in robotics: Gazebo and Unity.",
+  "source": "@site/docs/module2_digital_twin.md",
+  "sourceDirName": ".",
+  "slug": "/module2_digital_twin",
+  "permalink": "/physical-ai-humanoid-robotics-book/docs/module2_digital_twin",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/abdusubhan11/physical-ai-humanoid-robotics-book/tree/main/frontend/docs/module2_digital_twin.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Module 1 — The Robotic Nervous System (ROS 2)",
+    "permalink": "/physical-ai-humanoid-robotics-book/docs/module1_ros2"
+  },
+  "next": {
+    "title": "The AI-Robot Brain (NVIDIA Isaac)",
+    "permalink": "/physical-ai-humanoid-robotics-book/docs/module3_ai_robot_brain"
+  }
+}
