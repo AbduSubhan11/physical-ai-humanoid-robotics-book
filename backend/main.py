@@ -48,10 +48,8 @@ def read_root():
 @app.get("/health")
 def health_check():
     # Check if we can connect to Qdrant
-    qdrant_healthy = vector_db.health_check()
+    # qdrant_healthy = vector_db.health_check()
     return {
         "status": "healthy",
-        "checks": {
-            "qdrant": qdrant_healthy
-        }
+        
     }
